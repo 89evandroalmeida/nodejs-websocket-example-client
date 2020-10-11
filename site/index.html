@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <title>NodeJS Websocket Example</title>
+  <meta name="author" content="Evandro Almeida">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Node.js Websocket Example</h1>
+      <p>Exemplo de cálculo de operações aritméticas básicas utilizando Websocket</p>
+    </div>  
+    <div>
+      <form id="calc-form">
+        <div class="row">
+          <div class="col-md-4">
+            <label for="num1">Número 1</label>
+            <input type="text" id="num1" name="num1" class="form-control" />
+          </div>    
+          <div class="col-md-4">
+            <label for="operator">Operador</label>
+            <select id="operator" name="operator" class="form-control">     
+              <option name="+">+</option>
+              <option name="-">-</option>
+              <option name="*">*</option>
+              <option name="/">/</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="num2">Número 2</label>
+            <input type="text" id="num2" name="num2" class="form-control" />
+          </div>
+        </div>
+        <div>
+          <button id="calculate-btn" type="submit" class="btn btn-primary btn-lg btn-block">Calcular</button>
+        </div>
+        <div class="results-area">
+          <ul id="results"></ul>
+        </div>
+      </form>   
+    </div>
+    <div class="socket-area jumbotron">
+      <p id="socket-status">Conectando...</p>
+      <p> 
+        <button type="button" id="close-socket" class="btn btn-secondary">Fechar Socket</button>
+      </p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+#calculate-btn {
+  margin: 2% 0 2% 0;
+}
+
+.results-area {
+  border: solid 1px gray;
+  background-color: aliceblue;
+  height: 10em;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.socket-area {
+  padding: 1%;
+  margin-top: 2%;
+}
+
+.open {
+  color: green;
+  font-weight: bold;
+}
+
+.closed {
+  color: red;
+  font-weight: bold;
+}
