@@ -1,5 +1,5 @@
 window.onload = function () {
-    const socket = new WebSocket('ws://nodejs-websocket-example.herokuapp.com/');
+    const socket = new WebSocket('wss://nodejs-websocket-example.herokuapp.com/');
     const socketStatus = document.getElementById('socket-status');
   
     socket.onerror = function (error) {
